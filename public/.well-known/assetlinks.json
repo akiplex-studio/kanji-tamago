@@ -1,0 +1,10 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "io.github.ikaubon6.kiokuzakura",
+    "sha256_cert_fingerprints": [
+      "9E:60:CD:DC:E4:D9:D7:C0:3E:B8:A0:F4:68:33:13:EC:DB:DE:B0:F3:8B:EA:5A:FD:F6:51:8B:E7:AE:F3:6E:E0"
+    ]
+  }
+}]

@@ -1,0 +1,27 @@
+{
+  "name": "漢字タマゴ",
+  "short_name": "漢字タマゴ",
+  "description": "間隔反復法（SM-2）で小学校の漢字を覚えるアプリ。正解するとモンスターが育つ育成学習体験。",
+  "id": "/kanji-tamago/",
+  "start_url": "/kanji-tamago/",
+  "scope": "/kanji-tamago/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#FFC94A",
+  "background_color": "#FFF8E8",
+  "lang": "ja",
+  "icons": [
+    {
+      "src": "/kanji-tamago/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/kanji-tamago/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
