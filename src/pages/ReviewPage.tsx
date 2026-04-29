@@ -167,7 +167,12 @@ export default function ReviewPage({ words, onAnswer, onDone, onChangeGrade, onT
     }
     if (scanIdx < queueNow.length) {
       // eligible な語が見つかったので index を進める
-      if (scanIdx !== index) setIndex(scanIdx);
+      // 直前まで「答えがめん」(revealed=true) だった場合、index だけ動くと次の語の答えが
+      // 一瞬見えてしまうため、ここで必ず revealed もリセットする
+      if (scanIdx !== index) {
+        setIndex(scanIdx);
+        setRevealed(false);
+      }
     } else if (earliestCooldown !== null) {
       // 残り全て cooldown → 最早期限まで待機（'current' 理由なので経過後は再描画のみ）
       cooldownReasonRef.current = 'current';
